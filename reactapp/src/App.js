@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "./App.css";
+
 
 function Calculator() {
   const [num1, setNum1] = useState('');
@@ -20,7 +22,7 @@ function Calculator() {
       setError('Please enter both numbers.');
     } else {
       setError('');
-      setResult(Result: ${Number(num1) - Number(num2)});
+      setResult(`Result: ${Number(num1) - Number(num2)}`);
     }
   };
 
@@ -29,7 +31,7 @@ function Calculator() {
       setError('Please enter both numbers.');
     } else {
       setError('');
-      setResult(Result: ${Number(num1) * Number(num2)});
+      setResult(`Result: ${Number(num1) * Number(num2)}`);
     }
   };
 
@@ -41,7 +43,7 @@ function Calculator() {
       setResult('');
     } else {
       setError('');
-      setResult(Result: ${Number(num1) / Number(num2)});
+      setResult(`Result: ${Number(num1) / Number(num2)}`);
     }
   };
 
